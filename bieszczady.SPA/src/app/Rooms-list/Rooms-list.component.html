@@ -1,0 +1,18 @@
+
+ <div *ngFor="let room of rooms" >
+ <div class="col-sm-10 col-sm-offset-1 custom panel panel-default">
+ <div class="col-sm-12">
+  <div class="col-sm-3 "><img src="{{room.imgUrl}}"  class="thumbnail" alt="room Image"></div>
+  <div class="col-sm-4 ">
+   <h1>{{room.name}}</h1>
+   <p>Cena od {{room.price}} zł /dobe.</p>
+   <p>Ilość osob : {{room.peronAmount}}</p>
+   <p>Opis : {{room.description}}</p>
+   </div>
+   <div class="col-sm-4 ">
+   <button class="btn btn-success btn-lg btn-margin" [routerLink]="['/roomlist/' , room.roomId]">Wybierz</button>
+   <button class="btn btn-primary btn-lg btn-margin">Więcej informacji</button>
+   </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container-fluid">
+<div class="col-sm-6 col-sm-offset-3 text-center">
+<h1>Twoja rezerwacja</h1>
+<h4>Pokoj : {{room?.name}}</h4>
+<h3>Wybierz date pobytu </h3>
+<br>
+<form [formGroup]="registerForm" (ngSubmit)="send()">
+<div class="col-sm-6">
+<div class="form-group col-6 col-offset-3"   [ngClass]="{'has-error' : registerForm.get('StartTime').hasError('required') &&  registerForm.get('StartTime').touched}">
+    <input type="text" class="form-control"  bsDatepicker [bsConfig]="bsConfig"  placeholder="Data rozpoczęcia"  formControlName="StartTime" >
+    <span class="help-block" *ngIf="registerForm.get('StartTime').hasError('required') &&  registerForm.get('StartTime').touched">
+     Data rozpoczęcia jest wymagana 
+      </span>
+  </div>
+  </div>
+
+  <div class="col-sm-6">
+  <div class="form-group col-6 col-offset-3"  [ngClass]="{'has-error' : registerForm.get('EndTime').hasError('required') &&  registerForm.get('EndTime').touched}">
+    <input type="text" class="form-control" bsDatepicker [bsConfig]="bsConfig"  placeholder="Data zakończenia"  formControlName="EndTime" >
+    <span class="help-block" *ngIf="registerForm.get('EndTime').hasError('required') &&  registerForm.get('EndTime').touched">
+     Data zakończenia jest wymagana
+      </span>
+  </div>
+  </div>
+ 
+  <br><br>
+   <div class="form-group text-center">
+  <button class="btn btn-success btn-lg" [disabled]="!registerForm.valid" type="submit">Zatwierdz</button>
+   <button class="btn btn-danger btn-lg" (click)="confirm()" >Anuluj</button>
+  </div>
+   </form>
+</div>
+</div>

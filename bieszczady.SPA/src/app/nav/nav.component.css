@@ -1,0 +1,6 @@
+.dropdown-meny li, .dropdown-toggle {
+    cursor: pointer;
+}
+nav {
+    margin-bottom: 0;
+}

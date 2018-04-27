@@ -1,0 +1,47 @@
+[
+    {
+      "Username": "Washington",
+      "Password": "password",
+      "name": "Washington",
+      "Surname": "Wassin",
+      "email": "valenciahenson@realmo.com",
+      "phoneNumber": "(873) 551-2067",
+      "Role": "Admin"
+    },
+    { 
+      "Username": "Madden",
+      "Password": "password",
+      "name": "Madden",
+      "Surname": "Wassin",
+      "email": "jerihammond@suremax.com",
+      "phoneNumber": "(815) 557-3982",
+      "Role": "User"
+    },
+    {
+      "Username": "Mayer",
+      "Password": "password",
+      "name": "Mayer",
+      "Surname": "Wassin",
+      "email": "churchhayes@verton.com",
+      "phoneNumber": "(900) 413-2185",
+      "Role": "Employee"
+    },
+    {
+      "Username": "Jimenez",
+      "Password": "password",
+      "name": "Jimenez",
+      "Surname": "Wassin",
+      "email": "inezhardy@exotechno.com",
+      "phoneNumber": "(962) 599-2792",
+      "Role": "User"
+    },
+    {
+      "Username": "Knox",
+      "Password": "password",
+      "name": "Knox",
+      "Surname": "Wassin",
+      "email": "gregoryneal@gynk.com",
+      "phoneNumber": "(898) 475-3400",
+      "Role": "User"
+    }
+  ]

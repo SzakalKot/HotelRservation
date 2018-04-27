@@ -1,0 +1,27 @@
+
+
+<div class="container-fluid background">
+<div *ngIf="!registerMode && !resisterInfo" class="text-center">
+  <h1>Witamy w Bazie Noclegowej w Bieszczadach </h1>
+  <p class="lead">Założ konto i zobacz status rezerwacji </p>
+  <div  class="text-center">
+    <button class="btn btn-primary btn-lg" (click)="registerToogle()">Rejestracja</button>
+    <button class="btn btn-info btn-lg " (click)="InfoToogle()">Więcej informacji</button>
+  </div>
+</div>
+
+<div *ngIf="registerMode" class="container">
+  <div class="col-md-4 col-md-offset-4">
+    <app-register  (cancelRegister)="cancelRegisterMode($event)"></app-register>
+  </div>
+</div>
+
+<div *ngIf="registerInfo" class="container">
+  <div class="col-md-4 col-md-offset-4 ">
+
+    <p class="card card-body custom-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
+
+  </div>
+</div>
+
+</div>  

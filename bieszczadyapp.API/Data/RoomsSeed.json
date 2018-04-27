@@ -1,0 +1,62 @@
+[
+    {
+      "Description": "Ut sit anim culpa enim.",
+      "Internet": true,
+      "PeronAmount": 2,
+      "Type": "apart",
+      "Name":"apartament prezedencki",
+      "bathroom": true,
+      "IsEmpty": false,
+      "tv": true ,
+      "ImgUrl": "https://cdn.decoist.com/wp-content/uploads/2013/09/Twin-Random-Lights-in-the-living-room.jpg" ,
+      "Price": "200"
+    },
+    {
+      "Description": "Ullamco voluptate officia duis incididunt ex do.",
+      "Internet": true,
+      "PeronAmount": 3,
+      "Name":"Apartament premium",
+      "Type": "normal",
+      "bathroom": true,
+      "IsEmpty": false,
+      "tv": true ,
+      "ImgUrl": "http://u.profitroom.pl/2016.hoteltobaco.pl/uploads/wyprasowane2.jpg" ,
+      "Price": "200"
+    },
+    {
+      "Description": "Quis elit duis magna nulla nisi officia Lorem consequat.",
+      "Internet": true,
+      "PeronAmount": 3,
+      "Name":"Apartament ",
+      "Type": "apart",
+      "bathroom": true,
+      "IsEmpty": false,
+      "tv": true,
+      "ImgUrl": "http://www.kingasliwa.pl/wp-content/uploads/2015/04/pokoj-corki0001-1024x768.jpg" ,
+      "Price": "200"
+    },
+    {
+      "Description": "Commodo cupidatat ullamco sunt cillum veniam dolor duis.",
+      "Internet": true,
+      "PeronAmount": 2,
+      "Type": "apart",
+      "Name":"Normalny premium",
+      "bathroom": true,
+      "IsEmpty": false,
+      "tv": true,
+      "ImgUrl": "http://domslaski.pl/img/images/pokoje/pokoje-domslaski-18.jpg" ,
+      "Price": "200"
+    },
+    {
+      "Description": "Esse Lorem veniam culpa quis.",
+      "Internet": true,
+      "PeronAmount": 3,
+      "Type": "apart",
+      "Name":"Normalny ",
+      "bathroom": true,
+      "IsEmpty": false,
+      "tv": true,
+      "ImgUrl": "https://cdn.decoist.com/wp-content/uploads/2013/09/Twin-Random-Lights-in-the-living-room.jpg" ,
+      "Price": "200"
+    }
+  ]

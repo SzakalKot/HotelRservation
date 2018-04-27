@@ -1,0 +1,18 @@
+.background{
+    background-image: url('http://druzyna-b.pl/rowerek/2016/tatry/slides/header-day1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height:500px;
+    
+}
+.custom-box{
+    background-color:rgba(255, 255, 255, 0.5);
+    border:2px solid balck;
+    margin: 20px 20px ;
+    padding: 20px;
+
+}

@@ -1,0 +1,75 @@
+<div class="card card-body custom-box">
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+  <h2 class="text-center text-primary">Zarejestruj się</h2>
+  <hr>
+
+
+  <div class="form-group col-6 col-offset-3" [ngClass]="{'has-error' : registerForm.get('Username').errors &&  registerForm.get('Username').touched}">
+    <input type="text" class="form-control" placeholder="Nazwa uzytkownika"  formControlName="Username" >
+    <span class="help-block" *ngIf="registerForm.get('Username').hasError('required') &&  registerForm.get('Username').touched">
+      Nazwa jest wymagana
+      </span>
+  </div>
+
+     <div class="form-group col-6 col-offset-3" [ngClass]="{'has-error' : registerForm.get('surname').hasError('required') &&  registerForm.get('surname').touched}">
+    <input type="text" class="form-control" placeholder="surname"  formControlName="surname" >
+    <span class="help-block" *ngIf="registerForm.get('surname').hasError('required') &&  registerForm.get('surname').touched">
+      Nazwisko jest wymagane
+      </span>
+  </div>
+
+    <div class="form-group col-6 col-offset-3" [ngClass]="{'has-error' : registerForm.get('phoneNumber').hasError('required') &&  registerForm.get('phoneNumber').touched}">
+    <input type="text" class="form-control" pattern="\d{3}\d{3}\d{3}"  placeholder="phoneNumber"  formControlName="phoneNumber" >
+    <span class="help-block" *ngIf="registerForm.get('phoneNumber').hasError('required') &&  registerForm.get('phoneNumber').touched">
+     Numer telefonu jest wynagany
+      </span>
+        <span class="help-block" *ngIf="registerForm.get('phoneNumber').hasError('pattern')  &&  registerForm.get('phoneNumber').touched">
+     Numer telefonu jest wymagany . Wzor "234234234" .
+      </span>
+  </div>
+
+    <div class="form-group col-6 col-offset-3" [ngClass]="{'has-error' : registerForm.get('email').hasError('required') &&  registerForm.get('email').touched}">
+    <input type="text" class="form-control" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" placeholder="email"  formControlName="email" >
+    <span class="help-block" *ngIf="registerForm.get('email').hasError('required') &&  registerForm.get('email').touched">
+      Email jest wymagany
+      </span>
+      <span class="help-block" *ngIf="registerForm.get('email').hasError('pattern')  &&  registerForm.get('email').touched">
+      Email nie poprawny .Wzor : "michal@gmail.com" .
+      </span>
+  </div>
+
+
+
+  <div class="form-group "  [ngClass]="{'has-error' : registerForm.get('password').errors &&  registerForm.get('password').touched}"> 
+      <input type="password" class="form-control" placeholder="Password"  formControlName="password" >
+          <span class="help-block" *ngIf="registerForm.get('password').hasError('required') &&  registerForm.get('password').touched">
+      Password is required
+      </span>
+      <span class="help-block" *ngIf="registerForm.get('password').hasError('minlength') &&  registerForm.get('password').touched">
+          Password must be at least 4 character
+      </span>
+      <span class="help-block" *ngIf="registerForm.get('password').hasError('maxlength') &&  registerForm.get('password').touched">
+        Password cannot over fill 10 chapers
+      </span>
+  </div>
+
+ <div class="form-group "  [ngClass]="{'has-error' : registerForm.get('confirmPassword').errors &&  
+ registerForm.get('confirmPassword').touched || registerForm.get('confirmPassword').touched &&
+ registerForm.hasError('mismatch') }"> 
+      <input type="password" class="form-control" placeholder="Confirm password"  formControlName="confirmPassword" >
+          <span class="help-block" *ngIf="registerForm.get('confirmPassword').hasError('required') &&  registerForm.get('confirmPassword').touched">
+         Confirm password is required
+      </span>
+        <span class="help-block" *ngIf=" registerForm.get('confirmPassword').touched &&  registerForm.hasError('mismatch')">
+         Password and confim must be the same
+      </span>
+  </div>
+
+
+ <div class="form-group text-center">
+  <button class="btn btn-success btn-lg" [disabled]="!registerForm.valid" type="submit">Rejestruj</button>
+  <button class="btn btn-danger btn-lg" type="button" (click)="cancel()">Wstecz</button>
+</div>
+
+</form>
+</div>

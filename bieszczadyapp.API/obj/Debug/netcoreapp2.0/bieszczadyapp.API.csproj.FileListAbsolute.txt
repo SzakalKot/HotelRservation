@@ -1,0 +1,10 @@
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\bin\Debug\netcoreapp2.0\bieszczadyapp.API.deps.json
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\bin\Debug\netcoreapp2.0\bieszczadyapp.API.runtimeconfig.json
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\bin\Debug\netcoreapp2.0\bieszczadyapp.API.runtimeconfig.dev.json
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\bin\Debug\netcoreapp2.0\bieszczadyapp.API.dll
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\bin\Debug\netcoreapp2.0\bieszczadyapp.API.pdb
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\obj\Debug\netcoreapp2.0\bieszczadyapp.API.csproj.CoreCompileInputs.cache
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\obj\Debug\netcoreapp2.0\bieszczadyapp.API.AssemblyInfoInputs.cache
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\obj\Debug\netcoreapp2.0\bieszczadyapp.API.AssemblyInfo.cs
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\obj\Debug\netcoreapp2.0\bieszczadyapp.API.dll
+C:\Projekty\BieszczadyApp\bieszczadyapp.API\obj\Debug\netcoreapp2.0\bieszczadyapp.API.pdb
